@@ -51,7 +51,3 @@ The generated about topic will be encoded UTF-8.
 # KEYWORDS
 {{List alternate names or titles for this topic that readers might use.}}
 
-- {{ Keyword Placeholder }}
-- {{ Keyword Placeholder }}
-- {{ Keyword Placeholder }}
-- {{ Keyword Placeholder }}
