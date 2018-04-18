@@ -1,12 +1,19 @@
 function New-Greeting() {
     [CmdletBinding()]
     param(
-        [Parameter(Mandatory=$true, 
+        [Parameter(Mandatory=$true,
             ValueFromPipeline=$true)]
-        [string]$Name
+        [string]$Name,
+
+        [Parameter()]
+        [String]$Greeting
     )
 
+    Begin {
+        If ($Null -eq $Greeting) {$Greeting = 'Hello'}
+    }
+
     process {
-        "Hello " + $Name
+        Write-Output "$Greeting $Name"
     }
 }
